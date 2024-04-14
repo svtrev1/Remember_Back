@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{009F66DA-ACC3-4DDD-B895-2791A064B4B4}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebApiDemo PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiDemo/Category.cs">
+    <Files>
+      <File FileName="WebApiDemo/Services/RememberService.cs" Line="100" Column="51" />
+      <File FileName="WebApiDemo/Controllers/UserController (копия).cs" Line="39" Column="57" />
+      <File FileName="WebApiDemo/Word.cs" Line="2" Column="1" />
+      <File FileName="WebApiDemo/Category.cs" Line="2" Column="1" />
+      <File FileName="WebApiDemo/Class.cs" Line="1" Column="1" />
+      <File FileName="WebApiDemo/User.cs" Line="2" Column="1" />
+      <File FileName="WebApiDemo/Services/IService.cs" Line="20" Column="43" />
+      <File FileName="WebApiDemo/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="WebApiDemo/Json/words.json" Line="1" Column="281" />
+      <File FileName="WebApiDemo/Controllers/CategoryController.cs" Line="22" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebApiDemo" expanded="True">
+            <Node name="WebApiDemo" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Json" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Category.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
