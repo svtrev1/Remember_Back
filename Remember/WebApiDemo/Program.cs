@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using System.Text.Json;
- using WebApiDemo.Controllers;
+using WebApiDemo.Controllers;
 
 namespace WebApiDemo
 {
@@ -43,6 +43,13 @@ namespace WebApiDemo
 
                 app.UseHttpsRedirection();
             }
+
+            app.UseCors(options =>
+            {
+                options.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            });
 
             app.UseAuthorization();
 

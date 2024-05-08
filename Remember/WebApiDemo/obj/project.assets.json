@@ -1738,11 +1738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/svtrev/Desktop/Remember/WebApiDemo/WebApiDemo.csproj",
+      "projectUniqueName": "/Users/svtrev/Desktop/6sem/Kursach_TRPO/Remember_Back/Remember/WebApiDemo/WebApiDemo.csproj",
       "projectName": "WebApiDemo",
-      "projectPath": "/Users/svtrev/Desktop/Remember/WebApiDemo/WebApiDemo.csproj",
+      "projectPath": "/Users/svtrev/Desktop/6sem/Kursach_TRPO/Remember_Back/Remember/WebApiDemo/WebApiDemo.csproj",
       "packagesPath": "/Users/svtrev/.nuget/packages/",
-      "outputPath": "/Users/svtrev/Desktop/Remember/WebApiDemo/obj/",
+      "outputPath": "/Users/svtrev/Desktop/6sem/Kursach_TRPO/Remember_Back/Remember/WebApiDemo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/svtrev/.nuget/NuGet/NuGet.Config"

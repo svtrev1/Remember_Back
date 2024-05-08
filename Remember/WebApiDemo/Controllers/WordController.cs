@@ -33,6 +33,13 @@ namespace WebApiDemo.Controllers
             return Ok(words);
         }
 
+        [HttpGet("countWordsByCategotyId")]
+        public IActionResult GetCountWordsInCategory(int category_id)
+        {
+            var words = chatService.GetCountWordsInCategory(category_id);
+            return Ok(words);
+        }
+
         [HttpDelete("{word_id}")]
         public IActionResult DeleteWord (int word_id)
         {

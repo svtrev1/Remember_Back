@@ -14,6 +14,7 @@ namespace WebApiDemo.Services
         List<Word> GetAllWords();
         void AddWord(Word newWord);
         List<Word> GetWordsInCategory(int category_id);
+        int GetCountWordsInCategory(int category_id);
         Word GetWordById(int word_id);
         void RemoveWord(Word word);
 

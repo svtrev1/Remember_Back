@@ -13,9 +13,9 @@ namespace WebApiDemo.Services
         private List<Word> words;
         private List<Category> categories;
 
-        private string usersFilePath = "/Users/svtrev/Desktop/Remember/WebApiDemo/Json/users.json";
-        private string wordsFilePath = "/Users/svtrev/Desktop/Remember/WebApiDemo/Json/words.json";
-        private string categoriesFilePath = "/Users/svtrev/Desktop/Remember/WebApiDemo/Json/categories.json";
+        private string usersFilePath = "/Users/svtrev/Desktop/6sem/Kursach_TRPO/Remember_Back/Remember/WebApiDemo/Json/users.json";
+        private string wordsFilePath = "/Users/svtrev/Desktop/6sem/Kursach_TRPO/Remember_Back/Remember/WebApiDemo/Json/words.json";
+        private string categoriesFilePath = "/Users/svtrev/Desktop/6sem/Kursach_TRPO/Remember_Back/Remember/WebApiDemo/Json/categories.json";
         public RememberService()
         {
             if (File.Exists(usersFilePath))
@@ -75,6 +75,10 @@ namespace WebApiDemo.Services
         public List<Word> GetWordsInCategory(int category_id)
         {
             return words.FindAll(w => w.category_id == category_id);
+        }
+        public int GetCountWordsInCategory(int category_id)
+        {
+            return words.Count(w => w.category_id == category_id);
         }
 
         public Word GetWordById(int word_id)
