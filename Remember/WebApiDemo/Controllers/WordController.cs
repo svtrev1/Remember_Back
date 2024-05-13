@@ -71,8 +71,11 @@ namespace WebApiDemo.Controllers
                 english = english,
                 russian = russian
             };
-            chatService.AddWord(newWord);
-            return Ok(newWord);
+            int temp = chatService.AddWord(newWord);
+            if (temp == 1)
+                return Ok(newWord);
+            else
+                return NotFound("Category not found!");
         }
     }
 }

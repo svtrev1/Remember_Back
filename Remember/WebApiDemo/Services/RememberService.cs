@@ -66,10 +66,17 @@ namespace WebApiDemo.Services
             return words;
         }
 
-        public void AddWord(Word newWord)
+        public int AddWord(Word newWord)
         {
-            words.Add(newWord);
-            SaveData();
+            bool categoryExist = categories.Any(c => c.id == newWord.category_id);
+            if (categoryExist)
+            {
+                words.Add(newWord);
+                SaveData();
+                return 1;
+            }
+            else
+                return 0;
         }
 
         public List<Word> GetWordsInCategory(int category_id)
@@ -109,9 +116,18 @@ namespace WebApiDemo.Services
         {
             return categories.Find(c => c.id == category_id);
         }
+        public string GetCategoryNameById(int category_id)
+        {
+            var category = categories.Find(c => c.id == category_id);
+            if (category != null)
+                return category.name;
+            else
+                return null; 
+        }
 
         public void RemoveCategory(Category category)
         {
+            words.RemoveAll(w => w.category_id == category.id);
             categories.Remove(category);
             SaveData();
         }

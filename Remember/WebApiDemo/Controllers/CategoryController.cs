@@ -22,6 +22,17 @@ namespace WebApiDemo.Controllers
             return Ok(categories);
         }
 
+        [HttpGet("categoryNameById")]
+        public IActionResult GetCategoryNameById(int category_id)
+        {
+            var categories = chatService.GetCategoryNameById(category_id);
+            if (categories == null)
+            {
+                return NotFound("Category isn't found!");
+            }
+            return Ok(categories);
+        }
+
         [HttpGet("categoriesByUserId")]
         public IActionResult GetCategoriesByUserId(int user_id)
         {
@@ -42,7 +53,7 @@ namespace WebApiDemo.Controllers
                 return NotFound("Category to remove not found!");
             }
             chatService.RemoveCategory(category);
-            return Ok("Word deleted successfully");
+            return Ok("Category deleted successfully");
         }
 
         [HttpPost("addCategory")]

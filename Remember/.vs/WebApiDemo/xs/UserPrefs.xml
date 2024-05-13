@@ -5,9 +5,9 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiDemo/Services/RememberService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiDemo/Controllers/CategoryController.cs">
     <Files>
-      <File FileName="WebApiDemo/Services/RememberService.cs" Line="18" Column="100" />
+      <File FileName="WebApiDemo/Services/RememberService.cs" />
       <File FileName="WebApiDemo/Word.cs" />
       <File FileName="WebApiDemo/Category.cs" />
       <File FileName="WebApiDemo/Class.cs" />
@@ -15,16 +15,20 @@
       <File FileName="WebApiDemo/Services/IService.cs" />
       <File FileName="WebApiDemo/Controllers/UserController.cs" />
       <File FileName="WebApiDemo/Json/words.json" />
-      <File FileName="WebApiDemo/Controllers/CategoryController.cs" />
+      <File FileName="WebApiDemo/Controllers/CategoryController.cs" Line="56" Column="32" />
+      <File FileName="WebApiDemo/Program.cs" />
+      <File FileName="WebApiDemo/Controllers/WordController.cs" />
+      <File FileName="WebApiDemo/Json/categories.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApiDemo" expanded="True">
             <Node name="WebApiDemo" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="RememberService.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CategoryController.cs" selected="True" />
               </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>

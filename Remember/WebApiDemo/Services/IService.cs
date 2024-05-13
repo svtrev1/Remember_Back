@@ -12,7 +12,7 @@ namespace WebApiDemo.Services
         Task<int> LoginUser(User user);
 
         List<Word> GetAllWords();
-        void AddWord(Word newWord);
+        int AddWord(Word newWord);
         List<Word> GetWordsInCategory(int category_id);
         int GetCountWordsInCategory(int category_id);
         Word GetWordById(int word_id);
@@ -20,6 +20,7 @@ namespace WebApiDemo.Services
 
         List<Category> GetAllCategories();
         List<Category> GetCategoriesByUserId(int user_id);
+        string GetCategoryNameById(int category_id);
         Category GetCategoryById(int category_id);
         void RemoveCategory(Category category);
         void AddCategory(Category newCategory);
