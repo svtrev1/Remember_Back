@@ -138,6 +138,15 @@ namespace WebApiDemo.Services
             SaveData();
         }
 
+        public bool CheckUserCategory(int category_id, int user_id)
+        {
+            var temp = categories.Find(c => c.id == category_id);
+            if (temp.user_id == user_id)
+                return true;
+            else
+                return false;
+        }
+
         // USER
 
         public User GetUserById(int id)

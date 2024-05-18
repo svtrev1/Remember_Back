@@ -24,5 +24,6 @@ namespace WebApiDemo.Services
         Category GetCategoryById(int category_id);
         void RemoveCategory(Category category);
         void AddCategory(Category newCategory);
+        bool CheckUserCategory(int category_id, int user_id);
     }
 }
